@@ -22,9 +22,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>What is the instruction used if we want to configure pin RB0 and RB1 as input
 </title>
-<meta name="description" content="8051 microcontrollers have 4 I/O ports each of 8-bit, which can be configured as input or output. Hence, total 32 input/output pins allow the microcontroller to be connected with the peripheral devices. Pin configuration, i.e. the pin can be configured as 1 for input and 0 for output as per the logic state.To use port-1 as input port, 1 has to be written to the latch. In this input mode when 1 is written to the pin by the external device then it read fine. But when 0 is written to the pin by the external device then the external source must sink current due to internal pull-up.Control registers, called TRISA, for Port A and TRISB for Port B, determine whether the port is an input or an output, (or a mixture.) Writing logic 1 into a bit of TRISA causes the corresponding bit of Port A to input data. Logic 0 makes the corresponding bit output data. TRISB controls Port B in the same way.Writing 1s to TRISx will make the corresponding PORTx pins as Input. Similarly writing 0s to TRISx will make the corresponding PORTx pins as Output. TRISB = 0xff; // Configure PORTB as Input. ">
 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
-<meta name="keywords" content="What is the instruction used if we want to configure pin RB0 and RB1 as input">
 </head>
 <body data-rsssl="1" class="page-template-default custom-background custom-background-white custom-font-enabled single-author" style="padding: 0px 0px 154px;">
 <div id="page" class="site" style="height: auto !important;">

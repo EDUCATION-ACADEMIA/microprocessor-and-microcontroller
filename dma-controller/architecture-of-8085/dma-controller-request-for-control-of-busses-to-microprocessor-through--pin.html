@@ -22,9 +22,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DMA Controller request for control of busses to microprocessor through ..... pin
 </title>
-<meta name="description" content="The HLDA signal is a bus grant signal which indicates that the microprocessor has indeed released control of its buses by placing the buses at their high-impedance states. The 8237 DMA controller supplies the memory and I/O with control signals and memory address information during the DMA transfer.When a DMA module takes control of a bus, and while it retains control of the bus, what does the processor do? The processor pauses for each bus cycle stolen by the DMA module.The DMA controller sends Hold request (HRQ) to the CPU and waits for the CPU to assert the HLDA. Then the microprocessor tri-states all the data bus, address bus, and control bus. The CPU leaves the control over bus and acknowledges the HOLD request through HLDA signal.All buses are tri-stated, and a Hold Acknowledge signal is sent out. The Microprocessor regains control of buses after HOLD goes low. relinquishing control of the buses. Typically, an external peripheral such as a DMA controller, sends a request for a high signal to the HOLD pin. ">
 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
-<meta name="keywords" content="DMA Controller request for control of busses to microprocessor through ..... pin">
 </head>
 <body data-rsssl="1" class="page-template-default custom-background custom-background-white custom-font-enabled single-author" style="padding: 0px 0px 154px;">
 <div id="page" class="site" style="height: auto !important;">

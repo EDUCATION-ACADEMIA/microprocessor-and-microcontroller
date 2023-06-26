@@ -22,9 +22,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>What is the function of prescaler in PIC timer?
 </title>
-<meta name="description" content="A prescaler divides down the clock signals used for the timer, giving reduced overflow rates. The rate can be set to a number of possible values. The exact values are chip-dependent; e.g., for the PIC16F877A values area a number of values are available ranging from 1:1 to 1:256.The purpose of the prescaler is to allow the timer to be clocked at the rate a user desires. For shorter (8 and 16-bit) timers, there will often be a tradeoff between resolution (high resolution requires a high clock rate) and range (high clock rates cause the timer to overflow more quickly).In our case this means that we should select prescaler starting from 1:16 because the maximum period for a 1:16 prescaler is 65.5 ms which can accommodate a 50 ms pulse. You could also select from 1:32 to 1:256 prescalers to measure the pulse.The timer is nothing but a simple binary counter that can be configured to count clock pulses(Internal/External). Once it reaches the max value, it will roll back to zero setting up an Overflow flag and generates the interrupt if enabled.The prescaler is off by 1 because its 0-based: a PSC value of 0 means to use a prescaler (clock divider) of 1. Set the Counter Period to 65535. ">
 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
-<meta name="keywords" content="What is the function of prescaler in PIC timer?">
 </head>
 <body data-rsssl="1" class="page-template-default custom-background custom-background-white custom-font-enabled single-author" style="padding: 0px 0px 154px;">
 <div id="page" class="site" style="height: auto !important;">

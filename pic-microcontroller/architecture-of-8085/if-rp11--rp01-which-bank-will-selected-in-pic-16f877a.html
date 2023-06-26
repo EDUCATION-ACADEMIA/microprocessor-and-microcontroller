@@ -22,9 +22,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>If RP1=1 & RP0=1, which bank will selected in PIC 16f877A.
 </title>
-<meta name="description" content="With the help of three left bits (IRP, RP1, and RP0) one can control the transition between the banks: IRP-Register Bank Select bit, used for indirect addressing method. RP1:RP0:-Register Bank Select bits, used for direct addressing method.Selecting one of the banks is done via RP0 bit in STATUS register. Instruction BCF clears bit RP0 (RP0=0) in STATUS register and thus sets up bank 0. Instruction BSF sets the bit RP0 (RP0=1) in STATUS register and thus sets up bank1. It is useful to consider what would happen if the wrong bank was selected.Bits RP1 and RP0 (Register Page 1 and Register Page 0 respectively) serve as the upper 2 address bits for instructions which directly address the iRAM locations. This makes bit RP1 a 0 while making bit RP0 a 1, which gives us the leading 01 in TRISAs address.The PIC16F877 chip only has four banks (BANK 0, BANK 1, BANK 2, and BANK4). Each bank holds 128 bytes of addressable memory. ">
 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
-<meta name="keywords" content="If RP1=1 & RP0=1, which bank will selected in PIC 16f877A.">
 </head>
 <body data-rsssl="1" class="page-template-default custom-background custom-background-white custom-font-enabled single-author" style="padding: 0px 0px 154px;">
 <div id="page" class="site" style="height: auto !important;">
